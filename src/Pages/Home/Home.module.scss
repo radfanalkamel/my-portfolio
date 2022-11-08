@@ -1,0 +1,211 @@
+@import "./../../Styles/Variables.scss";
+
+.container {
+  display: flex;
+
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 2%;
+  }
+  &__col {
+    padding: 5px;
+    flex-basis: calc(100 / 7) * 1%;
+  }
+
+  h1 {
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    line-height: 40px;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    word-break: normal;
+    width: 350px;
+    background: radial-gradient(ellipse at top, #7f42ca, transparent),
+      radial-gradient(ellipse at bottom, #50868b, transparent);
+    border-radius: 20px;
+
+    &:hover {
+      text-transform: uppercase;
+      transition: 0.9s ease all;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      word-break: normal;
+      max-width: 350px;
+      border-radius: 300px 300px;
+      left: 45%;
+      background: rgb(0, 101, 47);
+      border-color: $primary;
+      background: rgba($primary, 0.1);
+      color: $primary;
+    }
+  }
+}
+
+.me {
+  display: block;
+  width: 100%;
+  padding: 0 1.5rem;
+  height: auto;
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
+  transition: 0.5s ease all;
+
+  p {
+    font-size: large;
+    color: rgba($primary, 0.4);
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20%;
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  button {
+    margin-top: 5%;
+    z-index: 9;
+    cursor: pointer;
+    outline: none;
+    padding: 0.8rem 4rem;
+    border-radius: $borderRadius;
+    font-size: 1rem;
+    font-family: inherit;
+    background: $primary;
+    color: $dark;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: 0.5s ease all;
+
+    &:hover {
+      border-color: $primary;
+      background: rgba($primary, 0.1);
+      color: $primary;
+    }
+    &:active {
+      border-color: $primary;
+      background: linear-gradient(rgba($primary, 0.2), rgba($primary, 0.3));
+      color: $primary;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap-reverse;
+      padding: 1rem 4rem;
+      width: 100%;
+      align-content: center;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+    animation: type 1.5s steps(12), blink 0.9s step-end infinite alternate;
+    @keyframes type {
+      from {
+        width: 0;
+      }
+      to {
+        width: 30%;
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: rgba($primary, 0.1);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 10%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $spacing-lg;
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
+      margin-right: calc(0.5rem + #{$spacing-md});
+    }
+    li {
+        a{
+          text-decoration: none;
+          font-size: 30px;
+          color: rgba($primary, 0.9);
+
+          &:hover {
+            border-color: $primary;
+            color: rgba($primary, 0.2);
+          }
+          &:active {
+            border-color: $primary;
+            color: $primary;
+          }
+        }
+    }
+  }
+
+  h1 {
+    margin-top: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    line-height: 55px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    word-break: keep-all;
+    border-radius: 20px;
+    font-weight: 500;
+
+    .bold {
+      font-weight: 700;
+      color: $primary;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 20%;
+      font-size: 35px;
+      line-height: 40px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .containerimg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    max-width: 1920px;
+    background-position: left;
+    background:no-repeat;
+    z-index: 0;
+  }
+}
