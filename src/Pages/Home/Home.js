@@ -1,5 +1,4 @@
 import React from "react";
-import me from "./../img/148650.jpg";
 import classes from "./Home.module.scss";
 import {
   TiSocialLinkedinCircular,
@@ -7,7 +6,6 @@ import {
   TiPhone,
 } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
