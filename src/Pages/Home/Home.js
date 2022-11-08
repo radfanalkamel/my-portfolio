@@ -15,10 +15,6 @@ const Home = () => {
     navigate("/contact");
   };
 
-
-  const ClickHandlercv = () => {
-    navigate("/RadfanAlkamel");
-  };
   return (
     <>
       <div className={classes.me}>
@@ -35,9 +31,10 @@ const Home = () => {
           <p>From YE</p>
         </div>
         <div>
-          <button onClick={ClickHandler}>Hire me</button>
+          <button onClick={ClickHandler}> Hire me </button>
           &nbsp;&nbsp;&nbsp;
-          <button onClick={ClickHandlercv}>CV</button>
+          <a href="https://drive.google.com/file/d/1NHxoUyeKcIMBgq5ULvJlP3TJJTRC8z3x/view" target={"_blank"} rel="noopener noreferrer">
+          <button >   CV   </button></a>
         </div>
         <ul>
           <li>
