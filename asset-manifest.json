@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/radfanportofilo/static/css/main.f62937af.css",
-    "main.js": "/radfanportofilo/static/js/main.a5706bf5.js",
-    "index.html": "/radfanportofilo/index.html",
-    "main.f62937af.css.map": "/radfanportofilo/static/css/main.f62937af.css.map",
-    "main.a5706bf5.js.map": "/radfanportofilo/static/js/main.a5706bf5.js.map"
+    "main.css": "/my-portfolio/static/css/main.f62937af.css",
+    "main.js": "/my-portfolio/static/js/main.a5706bf5.js",
+    "index.html": "/my-portfolio/index.html",
+    "main.f62937af.css.map": "/my-portfolio/static/css/main.f62937af.css.map",
+    "main.a5706bf5.js.map": "/my-portfolio/static/js/main.a5706bf5.js.map"
   },
   "entrypoints": [
     "static/css/main.f62937af.css",
