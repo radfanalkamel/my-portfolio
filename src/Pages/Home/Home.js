@@ -48,7 +48,7 @@ const Home = () => {
           </li>
           &nbsp;&nbsp;
           <li>
-            <a href="tel:+967-77-166-7229" target={"_blank"} rel="noopener noreferrer">
+            <a href="tel:+966-53-520-4899" target={"_blank"} rel="noopener noreferrer">
               <TiPhone/>
             </a>
           </li>
